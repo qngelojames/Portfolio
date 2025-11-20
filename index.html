@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <div class="card">
+      <h1>Hello Everyone!</h1>
+      <h2>I'm Angelo James Amban</h2>
+      <p>
+        I’m thrilled to welcome you to my portfolio.  
+        I am a passionate and versatile student with experience in C++, Java, and HTML.  
+        My journey as an IT student has been challenging, but I’ve learned a lot and I’m aiming for more knowledge about coding.
+      </p>
+    </div>
+  </section>
+ 
+
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"> 
+                <img src="ME.jpg">
+            </div>
+            <div class="about-col-2"> 
+<h1 class="sub-title">About Me</h1>
+<p>I'm an IT student currently studying at ST. John Paul II College of Davao. </p>
+
+<div class="tab-titles">
+    <p class = "tab-links active link" onclick="opentab('Language')">Language</p>
+    <p class = "tab-links"onclick="opentab('Projects')">Projects</p>
+    <p class = "tab-links"onclick="opentab('Education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="Language">
+    <ul>
+        <li><span>JAVASCRIPT</span><br>Designing App/Web</li>
+        <li><span>JAVA</span><br>Designing App/Web</li>
+        <li><span>HTML</span><br>Designing App/Web</li>
+    </ul>
+</div>
+<div class="tab-contents"id="Projects">
+    <ul>
+        <li><span>JAVASCRIPT</span><br>Designing App/Web</li>
+        <li><span>JAVA</span><br>Designing App/Web</li>
+        <li><span>HTML</span><br>Designing App/Web</li>
+    </ul>
+</div>
+<div class="tab-contents"id="Education">
+    <ul>
+        <li><span>JAVASCRIPT</span><br>Designing App/Web</li>
+        <li><span>JAVA</span><br>Designing App/Web</li>
+        <li><span>HTML</span><br>Designing App/Web</li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tablink.classList.remove("active-tab");
+      }
+
+    }
+  </script>
+
+</body>
+</html>
